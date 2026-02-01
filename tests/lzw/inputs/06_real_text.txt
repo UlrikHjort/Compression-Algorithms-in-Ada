@@ -1,0 +1,186 @@
+# Compression Algorithms in Ada
+
+A collection of classic compression algorithms implemented in Ada.
+
+## Author
+Copyright (C) 2026 By Ulrik Hørlyk Hjort
+
+## Project Structure
+```
+compress/
+├── src/
+│   ├── common/       # Shared utilities (future)
+│   └── huffman/      # Huffman coding implementation
+├── tests/            # Test files
+├── bin/              # Compiled executables
+├── obj/              # Object files
+├── Makefile          # Build system
+└── compress.gpr      # GNAT project file
+```
+
+## Implemented Algorithms
+- **Huffman Coding** - Variable-length prefix coding (in progress)
+
+## Building
+```bash
+make build    # Build all tools
+make clean    # Clean build artifacts
+make test     # Run tests
+make help     # Show available targets
+```
+
+## Usage
+
+### Huffman Compression
+```bash
+# Compress a file
+bin/huffman -c input.txt output.huf
+
+# Decompress a file
+bin/huffman -d input.huf output.txt
+```
+
+## Current Status
+✅ **Huffman Compression - COMPLETE**
+- Full implementation with tree-based encoding/decoding
+- Automatic fallback to uncompressed if compression increases size
+- Bit-level I/O for optimal encoding
+- All tests passing
+
+## Compression Results
+| Test Case | Original | Compressed | Ratio |
+|-----------|----------|------------|-------|
+| Large repetitive | 8,751 B | 1,736 B | **19%** |
+| Repeated chars | 1,001 B | 136 B | **13%** |
+| Real text (README) | 1,365 B | 1,073 B | **78%** |
+| High entropy | 47 B | 48 B | 102% (stored uncompressed) |
+| Single character | 2 B | 3 B | 150% (stored uncompressed) |
+
+## Next Steps
+- Additional algorithms (LZ77, RLE, etc.)
+- Performance optimizations
+- Larger file support (streaming)
+# Compression Algorithms in Ada
+
+A collection of classic compression algorithms implemented in Ada.
+
+## Author
+Copyright (C) 2026 By Ulrik Hørlyk Hjort
+
+## Project Structure
+```
+compress/
+├── src/
+│   ├── common/       # Shared utilities (future)
+│   └── huffman/      # Huffman coding implementation
+├── tests/            # Test files
+├── bin/              # Compiled executables
+├── obj/              # Object files
+├── Makefile          # Build system
+└── compress.gpr      # GNAT project file
+```
+
+## Implemented Algorithms
+- **Huffman Coding** - Variable-length prefix coding (in progress)
+
+## Building
+```bash
+make build    # Build all tools
+make clean    # Clean build artifacts
+make test     # Run tests
+make help     # Show available targets
+```
+
+## Usage
+
+### Huffman Compression
+```bash
+# Compress a file
+bin/huffman -c input.txt output.huf
+
+# Decompress a file
+bin/huffman -d input.huf output.txt
+```
+
+## Current Status
+✅ **Huffman Compression - COMPLETE**
+- Full implementation with tree-based encoding/decoding
+- Automatic fallback to uncompressed if compression increases size
+- Bit-level I/O for optimal encoding
+- All tests passing
+
+## Compression Results
+| Test Case | Original | Compressed | Ratio |
+|-----------|----------|------------|-------|
+| Large repetitive | 8,751 B | 1,736 B | **19%** |
+| Repeated chars | 1,001 B | 136 B | **13%** |
+| Real text (README) | 1,365 B | 1,073 B | **78%** |
+| High entropy | 47 B | 48 B | 102% (stored uncompressed) |
+| Single character | 2 B | 3 B | 150% (stored uncompressed) |
+
+## Next Steps
+- Additional algorithms (LZ77, RLE, etc.)
+- Performance optimizations
+- Larger file support (streaming)
+# Compression Algorithms in Ada
+
+A collection of classic compression algorithms implemented in Ada.
+
+## Author
+Copyright (C) 2026 By Ulrik Hørlyk Hjort
+
+## Project Structure
+```
+compress/
+├── src/
+│   ├── common/       # Shared utilities (future)
+│   └── huffman/      # Huffman coding implementation
+├── tests/            # Test files
+├── bin/              # Compiled executables
+├── obj/              # Object files
+├── Makefile          # Build system
+└── compress.gpr      # GNAT project file
+```
+
+## Implemented Algorithms
+- **Huffman Coding** - Variable-length prefix coding (in progress)
+
+## Building
+```bash
+make build    # Build all tools
+make clean    # Clean build artifacts
+make test     # Run tests
+make help     # Show available targets
+```
+
+## Usage
+
+### Huffman Compression
+```bash
+# Compress a file
+bin/huffman -c input.txt output.huf
+
+# Decompress a file
+bin/huffman -d input.huf output.txt
+```
+
+## Current Status
+✅ **Huffman Compression - COMPLETE**
+- Full implementation with tree-based encoding/decoding
+- Automatic fallback to uncompressed if compression increases size
+- Bit-level I/O for optimal encoding
+- All tests passing
+
+## Compression Results
+| Test Case | Original | Compressed | Ratio |
+|-----------|----------|------------|-------|
+| Large repetitive | 8,751 B | 1,736 B | **19%** |
+| Repeated chars | 1,001 B | 136 B | **13%** |
+| Real text (README) | 1,365 B | 1,073 B | **78%** |
+| High entropy | 47 B | 48 B | 102% (stored uncompressed) |
+| Single character | 2 B | 3 B | 150% (stored uncompressed) |
+
+## Next Steps
+- Additional algorithms (LZ77, RLE, etc.)
+- Performance optimizations
+- Larger file support (streaming)
