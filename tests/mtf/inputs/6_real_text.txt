@@ -1,0 +1,6 @@
+The Move-to-Front transform is a simple but clever encoding technique.
+It converts repeated characters into sequences of small numbers, which
+compress very well with RLE and Huffman coding. This makes it perfect
+for use after the Burrows-Wheeler Transform in compression pipelines
+like bzip2. The algorithm maintains a dynamic list of all possible
+byte values and moves accessed bytes to the front of the list.
